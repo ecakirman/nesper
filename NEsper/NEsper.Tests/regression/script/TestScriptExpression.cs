@@ -123,7 +123,7 @@ namespace com.espertech.esper.regression.script
         }
     
         [Test]
-        [Ignore] // javascript cannot validate with any of the known engines
+        [Ignore("")] // javascript cannot validate with any of the known engines
         public void TestInvalidScriptJS()
         {
             TryInvalidContains("expression js:abc[dummy abc = 1;] select * from SupportBean",
